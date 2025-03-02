@@ -43,7 +43,7 @@ function App() {
       </form>
       <button onClick={() => handleAllUsers()}>All users</button>
       <ul>
-        {allUsers?.map(
+        {allUsers !== null && allUsers?.map(
           (user) => (console.log(user), (<div key={user._id}>{user.name}</div>))
         )}
       </ul>
