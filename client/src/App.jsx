@@ -2,7 +2,7 @@ import axios from 'axios';
 
 function App() {
   const handleButtonClick = () => {
-    axios.get('http://localhost:3000/users').then((response) => {
+    axios.get('https://go-react-crud-app-29a97a0eb165.herokuapp.com/users').then((response) => {
       console.log(response.data);
     });
   };
